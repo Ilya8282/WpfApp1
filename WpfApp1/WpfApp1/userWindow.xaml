@@ -1,0 +1,192 @@
+﻿<Window x:Class="WpfApp1.userWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="userWindow" Height="620" Width="852" ResizeMode="NoResize">
+    <Grid>
+        <ListBox Name="myListBox" Margin="0,68,0,0" Background="White" Grid.ColumnSpan="2" >
+            <ListBox.ItemTemplate>
+                <DataTemplate x:Name="card">
+                    <Grid Width="773" Margin ="0,0,0,10">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto"/>
+                            <!-- Для картинки -->
+                            <RowDefinition Height="Auto"/>
+                            <!-- Для названия -->
+                            <RowDefinition Height="Auto"/>
+                            <!-- Для параметров -->
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+
+                        </Grid.RowDefinitions>
+
+                        <!-- Название -->
+                        <TextBlock Text="{Binding name}" IsEnabled="False" HorizontalAlignment="Center" Grid.Row="1"/>
+
+                        <!-- Параметры -->
+                        <Label Content="Редкость: " Grid.Row="2"/>
+                        <ComboBox SelectedIndex ="{Binding id_rarity}" IsEnabled="False" Grid.Row="3">
+                            <ComboBoxItem>
+                                <TextBlock FontSize="16">Обычная</TextBlock>
+                            </ComboBoxItem>
+                            <ComboBoxItem>
+                                <TextBlock FontSize="16">Редкая</TextBlock>
+                            </ComboBoxItem>
+                            <ComboBoxItem>
+                                <TextBlock FontSize="16">Эпическая</TextBlock>
+                            </ComboBoxItem>
+                            <ComboBoxItem>
+                                <TextBlock FontSize="16">Легендарная</TextBlock>
+                            </ComboBoxItem>
+                            <ComboBoxItem>
+                                <TextBlock FontSize="16">Чемпион</TextBlock>
+                            </ComboBoxItem>
+                        </ComboBox >
+                        <Label Content="Арена: " Grid.Row="4"/>
+                        <ComboBox SelectedIndex ="{Binding id_arena}" IsEnabled="False" Grid.Row="5">
+                            <ComboBoxItem>
+                                <TextBlock FontSize="16">Учебный лагерь</TextBlock>
+                            </ComboBoxItem>
+                            <ComboBoxItem>
+                                <TextBlock FontSize="16">Гоблинский стадион</TextBlock>
+                            </ComboBoxItem>
+                            <ComboBoxItem>
+                                <TextBlock FontSize="16">Костяная яма</TextBlock>
+                            </ComboBoxItem>
+                            <ComboBoxItem>
+                                <TextBlock FontSize="16">Варварская арена</TextBlock>
+                            </ComboBoxItem>
+                            <ComboBoxItem>
+                                <TextBlock FontSize="16">Долина чар</TextBlock>
+                            </ComboBoxItem>
+                            <ComboBoxItem>
+                                <TextBlock FontSize="16">Мастерская строителя</TextBlock>
+                            </ComboBoxItem>
+                            <ComboBoxItem>
+                                <TextBlock FontSize="16">Игровой домик П.Е.К.К.А.</TextBlock>
+                            </ComboBoxItem>
+                            <ComboBoxItem>
+                                <TextBlock FontSize="16">Королевская арена</TextBlock>
+                            </ComboBoxItem>
+                            <ComboBoxItem>
+                                <TextBlock FontSize="16">Ледяной пик</TextBlock>
+                            </ComboBoxItem>
+                            <ComboBoxItem>
+                                <TextBlock FontSize="16">Арена в джунглях</TextBlock>
+                            </ComboBoxItem>
+                            <ComboBoxItem>
+                                <TextBlock FontSize="16">Кабанья гора</TextBlock>
+                            </ComboBoxItem>
+                            <ComboBoxItem>
+                                <TextBlock FontSize="16">Электрическая долина</TextBlock>
+                            </ComboBoxItem>
+                            <ComboBoxItem>
+                                <TextBlock FontSize="16">Жуткий город</TextBlock>
+                            </ComboBoxItem>
+                            <ComboBoxItem>
+                                <TextBlock FontSize="16">Убежище разбойников</TextBlock>
+                            </ComboBoxItem>
+                            <ComboBoxItem>
+                                <TextBlock FontSize="16">Пик просветления</TextBlock>
+                            </ComboBoxItem>
+                            <ComboBoxItem>
+                                <TextBlock FontSize="16">Шахта</TextBlock>
+                            </ComboBoxItem>
+                            <ComboBoxItem>
+                                <TextBlock FontSize="16">Кухня палача</TextBlock>
+                            </ComboBoxItem>
+                            <ComboBoxItem>
+                                <TextBlock FontSize="16">Королевская гробница</TextBlock>
+                            </ComboBoxItem>
+                            <ComboBoxItem>
+                                <TextBlock FontSize="16">Тихая обитель</TextBlock>
+                            </ComboBoxItem>
+                            <ComboBoxItem>
+                                <TextBlock FontSize="16">Драконья купальня</TextBlock>
+                            </ComboBoxItem>
+                            <ComboBoxItem>
+                                <TextBlock FontSize="16">Тренировочный лагерь</TextBlock>
+                            </ComboBoxItem>
+                            <ComboBoxItem>
+                                <TextBlock FontSize="16">Clash Fest</TextBlock>
+                            </ComboBoxItem>
+                            <ComboBoxItem>
+                                <TextBlock FontSize="16">БЛИНЧИКИ!</TextBlock>
+                            </ComboBoxItem>
+                            <ComboBoxItem>
+                                <TextBlock FontSize="16">Легендарная арена</TextBlock>
+                            </ComboBoxItem>
+                        </ComboBox>
+                        <Label Content="Тип: " Grid.Row="6"/>
+                        <ComboBox SelectedIndex ="{Binding id_type}" IsEnabled="False" Grid.Row="7">
+                            <ComboBoxItem>
+                                <TextBlock FontSize="16">Войска</TextBlock>
+                            </ComboBoxItem>
+                            <ComboBoxItem>
+                                <TextBlock FontSize="16">Строение</TextBlock>
+                            </ComboBoxItem>
+                            <ComboBoxItem>
+                                <TextBlock FontSize="16">Заклинание</TextBlock>
+                            </ComboBoxItem>
+                        </ComboBox>
+                        <Label Content="Цель: " Grid.Row="8"/>
+                        <ComboBox SelectedIndex ="{Binding id_target }" IsEnabled="False" Grid.Row="9">
+                            <ComboBoxItem>
+                                <TextBlock FontSize="16">Земля</TextBlock>
+                            </ComboBoxItem>
+                            <ComboBoxItem>
+                                <TextBlock FontSize="16">Воздух</TextBlock>
+                            </ComboBoxItem>
+                            <ComboBoxItem>
+                                <TextBlock FontSize="16">Земля и воздух</TextBlock>
+                            </ComboBoxItem>
+                        </ComboBox>
+                        <Label Content="Передвигается по " Grid.Row="10"/>
+                        <ComboBox SelectedIndex ="{Binding id_movement }" IsEnabled="False" Grid.Row="11" >
+                            <ComboBoxItem>
+                                <TextBlock FontSize="16">Земля</TextBlock>
+                            </ComboBoxItem>
+                            <ComboBoxItem>
+                                <TextBlock FontSize="16">Воздух</TextBlock>
+                            </ComboBoxItem>
+                        </ComboBox>
+                        <Label Content="Дальность атаки: " Grid.Row="12"/>
+                        <TextBlock Text="{Binding id_attack_range}" Grid.Row="13"/>
+                        <Label Content="Скорость передвижения: " Grid.Row="14"/>
+                        <TextBlock Text="{Binding id_speed}" Grid.Row="15"/>
+                        <Label Content="Цена маны: " Grid.Row="16"/>
+                        <TextBlock Text="{Binding cost}" Grid.Row="17"/>
+                        <Label Content="Скорость появления: " Grid.Row="18"/>
+                        <TextBlock Text="{Binding recharge_speed}" Grid.Row="19"/>
+                        <Label Content="Перезарядка" Grid.Row="20"/>
+                        <TextBlock Text="{Binding disembarkation_time}" Grid.Row="21"/>
+                    </Grid>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+        <Label Content="Карты" HorizontalAlignment="Left" Margin="346,10,0,0" VerticalAlignment="Top" Width="136"/>
+    </Grid>
+</Window>
